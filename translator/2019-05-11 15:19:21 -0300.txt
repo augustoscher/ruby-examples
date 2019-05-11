@@ -1,0 +1,1 @@
+{"code":200,"lang":"pt-en","text":["ola all over the world"]}
