@@ -1,4 +1,4 @@
-# RUby Examples
+# Ruby Examples
 
 Some usefull Ruby examples
 
