@@ -150,3 +150,6 @@ puts ''
 res = hash.max_by{|k,v| v}
 puts "Hash #{hash}"
 puts "Biggest value in hash #{res}"
+
+# Check if a value exists in array
+['Cat', 'Dog', 'Bird'].include? 'Dog'
