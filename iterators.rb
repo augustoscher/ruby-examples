@@ -12,7 +12,7 @@ puts '===== WHILE LOOP ====='
 x = 1
 while x < 3
     puts x
-    x = x + 1
+    x += 1
 end
         
 puts '' 
@@ -36,6 +36,9 @@ puts '===== TIMES ====='
 3.times do |i|
     puts 'teste ' + i.to_s
 end
+
+puts '' 
+3.times { puts 'oi' }
 
 puts '' 
 puts '===== ARRAY COLLECTION =====' 
