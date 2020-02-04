@@ -63,30 +63,31 @@ def fahrenheitTokelvin(temp)
     puts 'fahrenheitTokelvin'
 end
 
-# def convert_temp(temp, *scale)
-    # if (input_scale === output_scale) 
-    #     return temp
-    # end
-    # puts x[input_scale]
-    # # puts input_scale
-    # case input_scale
-    # when 'celsius' then
-    #     if output_scale === 'fahrenheit'
-    #         return celsiusToFahrenheit(temp) 
-    #     end
-    #     return celsiusToKelvin(temp)
-    # when 'kelvin' then
-    #     if output_scale === 'fahrenheit'
-    #         return kelvinToFahrenheit(temp) 
-    #     end
-    #     return kelvinToCelsius(temp)
-    # when 'fahrenheit' then
-    #     if output_scale === 'celsius'
-    #         return fahrenheitToCelsius(temp) 
-    #     end
-    #     return fahrenheitToCelsiusKelvin(temp)
-    # end
-# end
+def convert_temp(temp, *scale)
+    if (input_scale === output_scale) 
+        return temp
+    end
+    puts x[input_scale]
+    # puts input_scale
+    case input_scale
+    when 'celsius' then
+        if output_scale === 'fahrenheit'
+            return celsiusToFahrenheit(temp) 
+        end
+        return celsiusToKelvin(temp)
+    when 'kelvin' then
+        if output_scale === 'fahrenheit'
+            return kelvinToFahrenheit(temp) 
+        end
+        return kelvinToCelsius(temp)
+    when 'fahrenheit' then
+        if output_scale === 'celsius'
+            return fahrenheitToCelsius(temp) 
+        end
+        return fahrenheitToCelsiusKelvin(temp)
+    end
+end
+
 # def convertCelsiusTo(t, output_scale)
 #     if output_scale === 'fahrenheit'
 #         return (t * (9/5)) + 32.0
