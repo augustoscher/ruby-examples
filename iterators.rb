@@ -2,6 +2,7 @@
 a = 1
 b = 2
 
+# executa quando a condição é falsa.
 unless a == b
   puts 'a <> b' 
 else
