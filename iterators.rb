@@ -29,6 +29,16 @@ loop do
     # end
     count += 1
 end
+puts 
+count = 0
+loop do
+  ok = count == 2
+  puts count
+  puts ok
+  break if ok
+
+  count += 1
+end
 
 puts '' 
 puts '===== TIMES =====' 
