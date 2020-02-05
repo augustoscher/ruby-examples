@@ -66,6 +66,7 @@ puts estados.count
 puts estados.empty?
 estados.delete_at(3)
 puts estados.count
+puts estados.include?('RS')
 
 for e in estados
     puts e
