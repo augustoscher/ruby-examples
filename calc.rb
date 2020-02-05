@@ -51,6 +51,6 @@ loop do
   when 5
     break
   else
-    puts 'Opção inválida'
+    puts 'Invalid option'
   end
 end
