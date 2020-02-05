@@ -56,7 +56,12 @@ puts '===== ARRAY COLLECTION ====='
 estados = []
 estados.push('RS', 'SC', 'BA')
 estados.push('SP')
+estados.insert(0, 'PR', 'MG')
+estados[0] = 'PE'
 # puts estados
+# puts estados[-1]
+# puts estados.first
+# puts estados.last
 puts estados.count
 puts estados.empty?
 estados.delete_at(3)
