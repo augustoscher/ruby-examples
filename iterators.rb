@@ -145,3 +145,20 @@ puts "Biggest value in hash #{res}"
 
 # Check if a value exists in array
 ['Cat', 'Dog', 'Bird'].include? 'Dog'
+
+
+# Append operator. Append item in array
+items = []
+2000000.times do |i|
+  items << i
+end
+
+c = 0
+items.each_slice(500) do |i|
+  c += 1
+  puts i
+  puts ""
+end
+
+puts c #4000 loops em batches de 500 itens
+
