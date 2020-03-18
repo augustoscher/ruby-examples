@@ -143,9 +143,15 @@ res = hash.max_by{|k,v| v}
 puts "Hash #{hash}"
 puts "Biggest value in hash #{res}"
 
+myHash = {}
+myHash = hashes.map {|h| h if h[:title] == "[LS - 8P] Email Marketing - Clique"}.reject(&:nil?)
+
+g2 = groups.map do |it|
+ h = {:value => it[:value], :title => it[:title]}
+end
+
 # Check if a value exists in array
 ['Cat', 'Dog', 'Bird'].include? 'Dog'
-
 
 # Append operator. Append item in array
 items = []
