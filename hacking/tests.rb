@@ -148,13 +148,6 @@ end
 # puts mask_article("Hello World! This is crap!", ["crap", "is"])
 # puts "hello".gsub(/[aeiou]/, '*')
 
-test = {:RS => 'POA'}
-test[:SC] = 'FLP'
-test[:MG] = 'BH'
-
-puts test[:RS]
-puts json: test
-
 
 # test = []
 # test.push("creeedo")
