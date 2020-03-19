@@ -1,4 +1,9 @@
+# Mapping an specific segmentation
+s = SegmentationList.where(segmentations_manager_id: a.segmentations_manager.id)
+r = s.map{|seg| seg if seg[:name] == "teste-augusto-emailmkt"}.reject(&:nil?)
+r[0][:name]
 
+# Getting interest_score_hash
 a = Account.find(id)
 lsm = a.lead_scoring_manager
 lsm.interest_score.scoring_hash[:groups]
