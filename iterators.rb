@@ -169,3 +169,16 @@ end
 puts c #4000 loops em batches de 500 itens
 
 
+accounts = []
+
+Sidekiq::Queue.new('exporter_low').each do |job| 
+  args = JSON.parse(job.args.first)
+  accounts << args['account_id']
+end
+
+accounts_un = accounts.uniq
+
+accounts_un.each do |id|
+ c = accounts.select{|a| a == id}.size
+ pp "account: #{id} - items: #{c}"
+end
